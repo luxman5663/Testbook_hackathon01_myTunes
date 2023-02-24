@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap');
+
+body{
+    background-color: darkblue;
+    font-family: 'pt sans',sans-serif;
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    line-height: 1.5;
+}
+#showcase{
+    margin: 0;
+    padding: 0;
+    background: url(mockup2.png) no-repeat cover/cover;
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow-y:hidden;
+}
+#showcase .overlay{
+    background-color: darkblue;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+#showcase .container{
+    margin-top: 25vh;
+}
+#showcase h1{
+    font-size: 3rem;
+    margin-bottom: 0;
+}
+#showcase h2{
+    font-size: 2rem;
+}
+#showcase p{
+    font-size: 1.3rem;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 3rem;
+    text-align: center;
+}
+nav{
+    height: 40px;
+    width: 100%;
+    background-color: darkslategray;
+    color: #fff;
+    position: fixed;
+    z-index: 20;
+}
+nav ul{
+    margin: 0;
+    padding: 0;
+}
+nav li{
+    display: inline;
+    float: left;
+}
+nav a{
+    display: inline-block;
+    width: 100px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    color: #fff;
+}
+nav a:hover{
+    background-color: #895353;
+    border-radius: 25px;
+}
+section{
+    padding-top: 30px; ;
+}
+section h1{
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+section h3{
+    text-align: center;
+    font-size: 2rem;
+}
+section p{
+    text-align: center;
+    font-size: 1.3rem;
+}
+section a.btn{
+    display: inline-block;
+    background-color: rgb(72, 117, 32);
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    border: none;
+    margin-bottom: 10px;
+}
+section a.btn:hover{
+    background-color: red;
+}
+section .mf{
+    font-size: 17px;
+    text-align: center;
+}
+section img{
+    width: 100%;
+}
+#sec-section{
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 40px 0;
+}
+#sec-section h3{
+    text-align: center;
+    font-size: 1.8rem;
+}
+#sec-section p{
+    font-size: 1.3rem;
+}
+#sec-section a.btn{
+    background-color: #b81765;
+    display: inline-block;
+    color: #fff;
+    padding: 15px 15px;
+    text-decoration: none;
+    border-radius: 15px;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+#sec-section a.btn:hover{
+    background-color: rgb(59, 101, 16);
+}
+#sec-section img{
+    width: 100%;
+}
+#third-section{
+    padding: 40px 0;
+  
+    background-image: url(mockup2.png) no-repeat center/cover;
+    height: 500px;
+    margin: 0;
+    z-index: -1;
+}
+
+#third-section h3{
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 30vh;
+}
+#third-section p{
+    font-size: 1.3rem;
+}
+#gift-card{
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 30px 0;
+}
+#gift-card img{
+    width: 100%;
+}
+.gift-cards{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 20px;
+    text-align: left;
+}
+#gift-cards i{
+    text-decoration: none;
+}
+#gift-card h2{
+    font-size: 1.5rem;
+    text-align: left;
+}
+#gift-card p{
+    text-align: left;
+    font-size: 1rem;
+}
+#gift-card a{
+    text-decoration: none;
+    color: #103063;
+}
+footer .footer-cols{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    padding: 2rem;
+    font-size: 14px;
+    text-align: left;
+}
+footer .footer-cols ul li a{
+    color: #ccc;
+    text-decoration: none;
+}
+footer .footer-bottom{
+    text-align: center;
+    background-color: #333;
+    padding: 15px;
+    color: #ccc;
+}
+@media screen and (max-width : 580px) {
+    nav{
+        height: auto;
+        border-bottom: 0;
+    }
+    nav ul{
+        display: none;
+        height: auto;
+    }
+    nav li{
+        width: 100%;
+        float: left;
+        position: relative;
+    }
+    nav a{
+        text-align: left;
+        width: 100%;
+        text-indent: 25px;
+        background-color: #333;
+        border-bottom: 1px solid #555;
+
+    }
+    nav a#openup::after{
+        content: "|||";
+        transform: rotate(-90deg);
+        -ms-transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg);
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        position: absolute;
+        right: 5px;
+        top: 20px;
+    }
+    nav a#openup{
+        display: block;
+        background-color: #333;
+        width: 100%;
+        position: relative;
+    }
+    .cf:before,.cf:after{
+        content: "";
+        display: table;
+    }
+    .cf:after{
+        clear: both;
+    }
+    .cf{
+        zoom: 1;
+    }
+
+}
+@media screen and (max-height: 580px) {
+    #showcase p.lead {
+      display: none;
+    }
+}
+
+@media screen and (max-width: 780px) {
+    .gift-cards {
+      grid-template-columns: 1fr;
+    }
+
+    footer .footer-cols {
+      display: none;
+    }
+  }
